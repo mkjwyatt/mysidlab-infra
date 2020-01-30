@@ -32,3 +32,11 @@
     owner: apache
     group: apache
     mode: 0755
+    
+- name: Copy files to remote host
+  copy:
+    src: files/hello-world-webapp
+    dest: /var/www/html
+    owner: apache
+    group: apache
+    mode: 0755
